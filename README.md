@@ -10,3 +10,9 @@
 </pre> 
 
 #### 리트코드 SQL 단계별 풀이 & 코드
+
+<pre>
+- Easy
+- Medium
+- Hard
+</pre> 

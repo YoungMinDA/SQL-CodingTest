@@ -1,0 +1,21 @@
+-- WITH 구문 생성
+WITH SUB AS (
+SELECT 
+    CART_ID, NAME
+FROM 
+    CART_PRODUCTS
+WHERE 
+    NAME IN ('Milk', 'Yogurt')
+GROUP BY 
+    CART_ID, NAME
+)
+
+SELECT 
+    CART_ID
+FROM
+    SUB
+GROUP BY
+    CART_ID
+HAVING COUNT(CART_ID) >= 2
+ORDER BY 
+    CART_ID
